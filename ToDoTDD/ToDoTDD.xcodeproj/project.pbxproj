@@ -13,9 +13,12 @@
 		E3D9C448276BD47100E757DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D9C446276BD47100E757DE /* Main.storyboard */; };
 		E3D9C44A276BD47400E757DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D9C449276BD47400E757DE /* Assets.xcassets */; };
 		E3D9C44D276BD47400E757DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D9C44B276BD47400E757DE /* LaunchScreen.storyboard */; };
-		E3D9C458276BD47400E757DE /* ToDoTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D9C457276BD47400E757DE /* ToDoTDDTests.swift */; };
 		E3D9C462276BD47400E757DE /* ToDoTDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D9C461276BD47400E757DE /* ToDoTDDUITests.swift */; };
 		E3D9C464276BD47400E757DE /* ToDoTDDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D9C463276BD47400E757DE /* ToDoTDDUITestsLaunchTests.swift */; };
+		E3D9C471276BD91E00E757DE /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D9C470276BD91E00E757DE /* ToDoItemTests.swift */; };
+		E3D9C473276BD98800E757DE /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D9C472276BD98800E757DE /* ToDoItem.swift */; };
+		E3D9C475276BDDC500E757DE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D9C474276BDDC500E757DE /* Location.swift */; };
+		E3D9C477276BDF8D00E757DE /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D9C476276BDF8D00E757DE /* LocationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +48,13 @@
 		E3D9C44C276BD47400E757DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3D9C44E276BD47400E757DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3D9C453276BD47400E757DE /* ToDoTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3D9C457276BD47400E757DE /* ToDoTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTDDTests.swift; sourceTree = "<group>"; };
 		E3D9C45D276BD47400E757DE /* ToDoTDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D9C461276BD47400E757DE /* ToDoTDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTDDUITests.swift; sourceTree = "<group>"; };
 		E3D9C463276BD47400E757DE /* ToDoTDDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTDDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E3D9C470276BD91E00E757DE /* ToDoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
+		E3D9C472276BD98800E757DE /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		E3D9C474276BDDC500E757DE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E3D9C476276BDF8D00E757DE /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,8 @@
 				E3D9C449276BD47400E757DE /* Assets.xcassets */,
 				E3D9C44B276BD47400E757DE /* LaunchScreen.storyboard */,
 				E3D9C44E276BD47400E757DE /* Info.plist */,
+				E3D9C472276BD98800E757DE /* ToDoItem.swift */,
+				E3D9C474276BDDC500E757DE /* Location.swift */,
 			);
 			path = ToDoTDD;
 			sourceTree = "<group>";
@@ -113,7 +121,8 @@
 		E3D9C456276BD47400E757DE /* ToDoTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				E3D9C457276BD47400E757DE /* ToDoTDDTests.swift */,
+				E3D9C470276BD91E00E757DE /* ToDoItemTests.swift */,
+				E3D9C476276BDF8D00E757DE /* LocationTests.swift */,
 			);
 			path = ToDoTDDTests;
 			sourceTree = "<group>";
@@ -260,6 +269,8 @@
 			files = (
 				E3D9C445276BD47100E757DE /* ViewController.swift in Sources */,
 				E3D9C441276BD47100E757DE /* AppDelegate.swift in Sources */,
+				E3D9C475276BDDC500E757DE /* Location.swift in Sources */,
+				E3D9C473276BD98800E757DE /* ToDoItem.swift in Sources */,
 				E3D9C443276BD47100E757DE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3D9C458276BD47400E757DE /* ToDoTDDTests.swift in Sources */,
+				E3D9C477276BDF8D00E757DE /* LocationTests.swift in Sources */,
+				E3D9C471276BD91E00E757DE /* ToDoItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
